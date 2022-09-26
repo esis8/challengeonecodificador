@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/dark.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="text/javascript" src="./js/script.js"></script>
+    <title>Challenge Codificador</title>
+    <link rel="icon" type="image/x-icon" href="./img/icono.ico">
+</head>
+<body>
+    <header id="inicio">
+        <div class="logo">
+            <img src="./img/Logo.png" alt="logo" class="sunMode">
+            <img src="./img/Logo_dark.png" alt="Logo_dark" class="darkMode">
+        </div>
+        <div id="switch" class="switch">
+            <i><img src="./img/moon_theme.png" alt="sun" class="sunMode"></i>
+            <i><img src="./img/sun_theme.png" alt="moon" class="darkMode"></i>
+        </div>
+    </header>
+    <main>
+        <section class="section1">
+                <textarea contenteditable="true" id="texto" class="textArea" placeholder="Ingrese texto aqui"></textarea>
+            <article class="buttons">
+                <div class="alert">
+                    <p id="alert1"><i class="fa-solid fa-triangle-exclamation"></i>  Solo letras minúsculas y sin acentos</p>
+                    <p id="alert2"><i class="fa-solid fa-triangle-exclamation"></i>  Ingrese un texto primero</p>
+                </div>
+                <button type="button" id="encriptar"><a href="#resultado">Encriptar</a></button>
+                <button type="button" id="desencriptar"><a href="#resultado">Desencriptar</a></button>
+            </article>
+        </section>
+        <section class="section2">
+            <textarea name="resultado" id="resultado" class="textArea2" readonly></textarea>
+            <article id="ocultarResultado" class="inactive">
+                <div>
+                    <img src="./img/Muneco.png" alt="buscador" class="sunMode">
+                    <img src="./img/Muneco_dark.png" alt="buscador" class="darkMode">
+                </div>
+                <h3>Ningún mensaje fue encontrado</h3>
+                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+            </article>
+            <article class="buttons" id="mostrarResultado">
+                <button type="button" id="copiar"><a href="#inicio">Copiar/Reset</a></button>
+            </article>
+        </section>
+    </main>
+
+
+
+<script src="./js/ejec.js"></script>
+
+</body>
+
+
+
+</html>

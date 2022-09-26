@@ -1,0 +1,47 @@
+body.dark {
+    background-color: #0A3871;
+    }
+.darkMode{
+    display: none;
+    }
+body.dark .sunMode{
+    display: none;
+    }
+body.dark .darkMode{
+    display: inline-block;
+    }
+
+body.dark textarea {
+    color: #ffffff;
+    background-color: #0A3871;
+    }
+
+body.dark .textArea::placeholder{
+    color: #ffffff;
+}
+
+body.dark .alert p{
+    color: #D8DFE8
+}
+
+body.dark .alert i {
+    color: #ffff00;
+}
+
+body.dark #encriptar {
+    background-color: #D8DFE8;
+    color: #0A3871;
+    }
+
+body.dark #desencriptar, body.dark #copiar {
+    background-color: #ffffff;
+    color: #0A3871;
+    }
+
+body.dark #ocultarResultado h3, body.dark #ocultarResultado p {
+    color: #D8DFE8;
+    
+}
+body.dark .textArea2 {
+    color:#D8DFE8;
+}
